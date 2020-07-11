@@ -1,0 +1,147 @@
+@mixin darkGreyBackground {
+  background-color: #979797;
+}
+
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin h1Text {
+  font-family: Livvic, sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+@mixin livvic {
+  font-family: "Livvic", sans-serif;
+}
+@mixin roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin h2 {
+  font-size: 34px;
+  line-height: 51px;
+  font-weight: bold;
+  font-family: "Livvic", sans-serif;
+}
+
+@mixin h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: "Livvic", sans-serif;
+}
+
+@mixin h4 {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Livvic", sans-serif;
+}
+
+@mixin p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  font-family: "Livvic", sans-serif;
+}
+
+@mixin animationPulse {
+  -webkit-animation: pulse 3s ease infinite;
+  -moz-animation: pulse 3s ease infinite;
+  -ms-animation: pulse 3s ease infinite;
+  -o-animation: pulse 3s ease infinite;
+  animation: pulse 3s ease infinite;
+}
+
+@mixin keyFramesPulse {
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+
+    25% {
+      -webkit-transform: scale(1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(1);
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+    }
+
+    25% {
+      -moz-transform: scale(1.1);
+    }
+
+    50% {
+      -moz-transform: scale(1);
+    }
+
+    100% {
+      -moz-transform: scale(1);
+    }
+  }
+
+  @-ms-keyframes pulse {
+    0% {
+      -ms-transform: scale(1);
+    }
+
+    25% {
+      -ms-transform: scale(1.1);
+    }
+
+    50% {
+      -ms-transform: scale(1);
+    }
+
+    100% {
+      -ms-transform: scale(1);
+    }
+  }
+
+  @-o-keyframes pulse {
+    0% {
+      -o-transform: scale(1);
+    }
+
+    25% {
+      -o-transform: scale(1.1);
+    }
+
+    50% {
+      -o-transform: scale(1);
+    }
+
+    100% {
+      -o-transform: scale(1);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
